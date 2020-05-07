@@ -1,3 +1,9 @@
+/* Add CSS styling here */
+
+
+/*CSS Reset*/
+
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -136,76 +142,122 @@ table {
     border-spacing: 0;
 }
 
-html {
-    font-size: 62.5%;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
 }
+
+
+/*End of CSS Reset*/
+
+
+/*Google Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Galada&display=swap');
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Galada', cursive;
+    font-size: 3.5rem;
+}
+
+p,
+a {
+    font-family: 'Caveat';
+    font-size: 1.5rem;
+}
+
+
+/*Main CSS*/
 
 body {
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    font-size: 16px;
-    letter-spacing: 0.6px;
-    word-spacing: -0.4px;
-    color: #000000;
-    font-weight: normal;
-    text-decoration: none;
-    font-style: normal;
-    font-variant: normal;
-    text-transform: none;
+    /* display: flex; */
+    background-color: #F48186;
 }
 
-.header {
-    display: flex;
-    padding: 3%;
-    height: 70vh;
-    width: 60vw;
+html {
+    font-size: 65.5%;
 }
 
-h1 {
+.container {
+    /* display: flex; */
+    padding: .8rem;
+    margin: .8rem;
+    max-width: 100%;
+}
+
+.top {
     display: flex;
-    margin: 3%;
+    justify-content: center;
+    flex-flow: nowrap;
+    width: 80%;
+    height: 50px;
+    background-color: #FEF1E8;
+    font-size: .9rem;
+}
+
+.top <a {
+    display: flex;
+}
+
+header {
+    height: 80h;
+    width: 70vh;
+    background-color: #F48186;
 }
 
 nav>a {
     display: flex;
     flex-direction: row;
+    width: 150px;
+    height: 65px;
+    ;
 }
 
-.section1 {
+.div1 {
     display: flex;
+}
+
+.gallery1 img {
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-}
-
-.bigimg {
-    display: flex;
+    align-content: space-between;
     border: 5px solid darkblue;
-    height: 250px;
-    width: 300px;
-    margin: 4%;
-}
-
-.item {
-    border: 5px solid darkblue;
-    height: 150px;
+    height: 200px;
     width: 200px;
 }
 
-img.gallery {
+
+/*     
+    .box {
+        display: flex;
+        /* flex-direction: row; */
+
+justify-content: space-evenly;
+
+/* flex-wrap: nowrap; */
+
+border: 5px solid darkblue;
+height: 200px;
+width: 200px;
+
+}
+*/ .div3 {
+    display: flex;
+}
+footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border: 5px solid darkblue;
-    height: 150px;
-    width: 200px;
 }
-
-@media (max-width:800px) {
-    body {
-        background: pink;
-    }
-}
-
-@media (max-width:500px) {
-    body {
-        background: purple;
-    }
+a:hover {
+    display: flex;
+    text-align: center;
+    background-color: #3C3E3D;
+    color: #FEF1E8;
+    border: 2px solid #F48186;
 }
